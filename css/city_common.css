@@ -1,0 +1,223 @@
+video {
+    width: 100%;
+}
+article{
+    position: relative;
+    height: 1800px;
+}
+/*内容区域 主图 Start*/
+article .main {
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+}
+article .main:hover {
+    background-size: 640px 320px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,.6);
+}
+article .main h2 {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    font-size: 40px;
+    transform: translateX(-50%);
+    color: #fff;
+}
+article .main p {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+/*内容区域 主图 End*/
+
+/*内容区域 热门景点 Start*/
+article div[class^=title] {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #bdbcbd;
+}
+article div[class^=title] h3 {
+    float: left;
+    margin-left: 10px;
+}
+article div[class^=title] a {
+    float: right;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #2295e8;
+}
+article div[class^=title] a:hover {
+    color: #ff6a00;
+}
+article .title1 {
+    position: absolute;
+    top: 380px;
+}
+article .viewpoint {
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 840px;
+}
+article .viewpoint span {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 350px;
+    border-radius: 17px;
+    background-color: #fff;
+}
+article .viewpoint span:nth-child(1) {
+    margin-left: 100px;
+}
+article .viewpoint span:nth-child(1),
+article .viewpoint span:nth-child(2),
+article .viewpoint span:nth-child(3) {
+    margin-bottom: 30px;
+}
+article .hello {
+    margin-right: 125px;
+}
+article .viewpoint span img {
+    float: top;
+    width: 250px;
+    height: 250px;
+    border-radius: 17px;
+}
+article .viewpoint span img:hover {
+    transform: scale(1.07,1.07);
+}
+article .viewpoint span h4 {
+    position: absolute;
+    left: 20px;
+    bottom: 48px;
+    font-size: 20px;
+    color: #2295e8;
+}
+article .viewpoint span h4:hover {
+    color: #ff6a00;
+}
+article .viewpoint span p {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+    font-size: 14px;
+}
+/*内容区域 热门景点 End*/
+/*内容区域 行程线路 Start*/
+article .title2 {
+    position: absolute;
+    top: 390px;
+}
+article div[class^=line] {
+    position: absolute;
+    left: 100px;
+    width: 780px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+article div[class^=line] img {
+    float: left;
+    height: 150px;
+    border-radius: 15px;
+}
+article div[class^=line] img:hover {
+    transform: scale(1.07,1.07);
+}
+article div[class^=line] h4 {
+    position: absolute;
+    left: 380px;
+    top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+article div[class^=line] h4:hover {
+    color: #ff6a00;
+}
+article div[class^=line] p {
+    position: absolute;
+    left: 380px;
+    font-size: 14px;
+    color: #999;
+}
+article div[class^=line] .p1 {
+    bottom: 60px;
+}
+article div[class^=line] .p2 {
+    bottom: 30px;
+}
+article .line1 {
+    top: 465px;
+}
+article .line2 {
+    top: 650px;
+}
+/*内容区域 行程线路 End*/
+/*内容区域 旅行商城 Start*/
+article .title3 {
+    position: absolute;
+    top: 825px;
+}
+article div[class^=mall] {
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    border-radius: 18px;
+    background-color: #fff;
+}
+article div[class^=mall] img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+}
+article div[class^=mall] img:hover {
+    transform: scale(1.05,1.05);
+}
+article div[class^=mall] h4 {
+    position: absolute;
+    top: 25px;
+    left: 180px;
+    font-size: 20px;
+    color: #333;
+}
+article div[class^=mall] h4:hover {
+    color: #ff6a00;
+}
+article div[class^=mall] h5 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    color: #df422a;
+}
+article div[class^=mall] p {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    margin-right: 20px;
+    font-size: 13px;
+    color: #999;
+}
+article .mall1 {
+    top: 900px;
+    left: 100px;
+}
+article .mall2 {
+    top: 900px;
+    right: 100px;
+}
+article .mall3 {
+    top: 1080px;
+    left: 100px;
+}
+/*内容区域 旅行商城 End*/

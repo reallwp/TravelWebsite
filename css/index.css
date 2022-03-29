@@ -1,0 +1,278 @@
+/*头部导航区域 Start*/
+.main .nav>li:nth-child(1) {
+    border-bottom: 0;
+    background-color: #293748;
+}
+.main .nav>li:nth-child(1) a {
+    color: #fff;
+    font-weight: 500;
+}
+/*头部导航区域 End*/
+/*内容区域 Start*/
+/*内容区域 首图区域 Start*/
+.content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.content img {
+    float: top;
+    width: 100%;
+}
+.content .img {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -275px;
+    width: 550px;
+    height: 97px;
+    background: url("../images/travel.png");
+}
+.content ul li:nth-child(1) {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    color: #fff;
+}
+.content ul li:nth-child(2) {
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+}
+.content .button {
+    display: block;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    height: 60px;
+    border-radius: 30px;
+    border-left: 3px solid rgba(255,255,255,.6);
+    border-top: 3px solid rgba(255,255,255,.6);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.6);
+    background-color: #ff359b;
+}
+.content .button:hover {
+    border-left: 0 solid rgba(255,255,255,.6);
+    border-top: 0 solid rgba(255,255,255,.6);
+    border-right: 3px solid rgba(255,255,255,.6);
+    border-bottom: 3px solid rgba(255,255,255,.6);
+    box-shadow: -3px -3px 3px rgba(0,0,0,.6);
+}
+.content .button:active {
+    background-color: #fc5664;
+}
+.content .button a {
+    display: block;
+    width: 240px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+}
+/*内容区域 首图区域 End*/
+article{
+    position: relative;
+    height: 1830px;
+}
+/*内容区域 项目服务区域 Start*/
+article .title1 {
+    top: 40px;
+}
+article div[class^=title] {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #bdbcbd;
+}
+article div[class^=title] ul li:nth-child(1) {
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-left: 20px;
+    color: #2295e8;
+    border-bottom: 2px solid #2295e8;
+}
+article div[class^=title] ul li:nth-child(2) {
+    float: left;
+    font-size: 10px;
+    line-height: 32px;
+    margin-left: 10px;
+    color: #bdbcbd;
+}
+article div[class^=title] ul li:nth-child(3) a {
+    float: right;
+    font-size: 13px;
+    line-height: 28px;
+    color: #686868;
+}
+article div[class^=title] ul li:nth-child(3) a:hover {
+    color: #ff6a00;
+}
+article div[class^=title] ul li:nth-child(3) a::after {
+    content: '\ea3c';
+    font-family: 'icomoon', serif;
+    font-size: 13px;
+    line-height: 28px;
+    margin: 0 6px 0 3px;
+    color: #686868;
+}
+article .service {
+    position: absolute;
+    top: 90px;
+    width: 1000px;
+    height: 150px;
+    margin: 35px 100px;
+}
+/*内容区域 项目服务区域 End*/
+/*内容区域 旋转木马区域 Start*/
+article .title2 {
+    top: 340px;
+}
+@keyframes rotate {
+    0% {
+        transform: rotateY(0);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+article .carousel {
+    position: absolute;
+    top: 410px;
+    width: 1000px;
+    height: 500px;
+    margin: 0 100px;
+    perspective: 6000px;
+    border-radius: 30px;
+    background: url("../images/舞台背景.jpg");
+}
+article .carousel>div {
+    position: absolute;
+    top: 99px;
+    left: 300px;
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotate 12s linear infinite forwards;
+
+}
+article .carousel>div:hover {
+    animation-play-state: paused;
+}
+article .carousel>div a {
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    box-shadow: 3px 3px 5px #000;
+}
+article .carousel>div a:nth-child(1) {
+    background: url("../images/paris.jpg");
+    transform: translateZ(270px);
+}
+article .carousel>div a:nth-child(2) {
+    background: url("../images/newyork.jpg");
+    transform: translateX(270px) rotateY(90deg);
+}
+article .carousel>div a:nth-child(3) {
+    background: url("../images/tokyo.jpg");
+    transform: translateZ(-270px) rotateY(180deg);
+}
+article .carousel>div a:nth-child(4) {
+    background: url("../images/sydney.jpg");
+    transform: translateX(-270px) rotateY(-90deg);
+}
+/*内容区域 旋转木马区域 End*/
+/*内容区域 客房别墅 Start*/
+article .title3 {
+    top: 940px;
+}
+@keyframes hotel {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1500px 0;
+    }
+}
+article div[class^=hotel] {
+    position: absolute;
+    top: 1015px;
+    width: 300px;
+    height: 203px;
+    border-radius: 20px;
+    background: url("../images/hotel.jpg") no-repeat;
+    animation: hotel 10s steps(5) infinite;
+}
+article .hotel1 {
+    left: 100px;
+}
+article .hotel2 {
+    left: 450px;
+}
+article .hotel3 {
+    right: 100px;
+}
+/*内容区域 客房别墅 End*/
+/*内容区域 美食特产 Start*/
+article .title4 {
+    top: 1255px;
+}
+.gourmet {
+    position: absolute;
+    top: 1340px;
+    width: 996px;
+    height: 332px;
+    margin: 0 102px;
+}
+.gourmet span {
+    float: left;
+    width: 166px;
+    height: 166px;
+    text-align: center;
+    line-height: 135px;
+    font-size: 13px;
+    color: #293748;
+    border-radius: 12px;
+    background-color: #fff;
+}
+.gourmet span:nth-child(1) {
+    background: url("../images/马来西亚咖喱叻沙.jpg");
+}
+.gourmet span:nth-child(3) {
+    background: url("../images/泰国冬荫功.jpg");
+}
+.gourmet span:nth-child(5) {
+    background: url("../images/法国蜗牛.jpg");
+}
+.gourmet span:nth-child(8) {
+    background: url("../images/希腊Moussaka.jpg");
+}
+.gourmet span:nth-child(10) {
+    background: url("../images/中国北京烤鸭.jpg");
+}
+.gourmet span:nth-child(12) {
+    background: url("../images/英国牧羊人馅饼.jpg");
+}
+.gourmet .img:hover {
+    transform: scale(1.1,1.1);
+}
+/*内容区域 美食特产 End*/
+/*内容区域 End*/

@@ -1,0 +1,131 @@
+/*头部导航区域 Start*/
+.main .nav>li:nth-child(2) {
+    border-bottom: 0;
+    background-color: #293748;
+}
+.main .nav>li:nth-child(2)>a {
+    color: #fff;
+    font-weight: 500;
+}
+/*头部导航区域 End*/
+/*内容区域 热点地图 Start*/
+.main_bg {
+    position: relative;
+}
+.main_bg div {
+    position: absolute;
+    top: 122px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 996px;
+    height: 560px;
+    background: url("../images/explore/map.png") no-repeat;
+}
+.main_bg img {
+    width: 100%;
+}
+/*内容区域 热点地图 扩散小点 Start*/
+.main_bg>div .city1 {
+    position: absolute;
+    top: 237px;
+    left: 302px;
+}
+.main_bg>div .city2 {
+    position: absolute;
+    top: 210px;
+    left: 505px;
+}
+.main_bg>div .city3 {
+    position: absolute;
+    top: 242px;
+    left: 871px;
+}
+.main_bg>div .city4 {
+    position: absolute;
+    top: 464px;
+    left: 905px;
+}
+@keyframes pause {
+    0% {
+    }
+    70% {
+        width: 45px;
+        height: 45px;
+        opacity: 1;
+    }
+    100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+.main_bg>div span[class^=city] .dotted {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff3eae;
+}
+.main_bg>div span[class^=city] span[class^=pulse] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px #ff56ca;
+    animation: pause 1.5s linear infinite;
+}
+.main_bg>div span[class^=city] .pulse2 {
+    animation-delay: 0.5s !important;
+}
+.main_bg>div span[class^=city] .pulse3 {
+    animation-delay: 1s !important;
+}
+/*内容区域 热点地图 扩散小点 End*/
+/*内容区域 热点地图 图片晃动 Start*/
+.main_bg>div a span[class^=square] {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    backdrop-filter: blur(5px);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    z-index: 8;
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+}
+.main_bg>div a .square1 {
+    top: 150px;
+    left: 170px;
+    background: url("../images/explore/newyork.jpg") no-repeat;
+}
+.main_bg>div a .square2 {
+    top: 130px;
+    left: 375px;
+    background: url("../images/explore/paris.jpg") no-repeat;
+}
+.main_bg>div a .square3 {
+    top: 162px;
+    left: 745px;
+    background: url("../images/explore/tokyo.jpg") no-repeat;
+}
+.main_bg>div a .square4 {
+    top: 387px;
+    left: 780px;
+    background: url("../images/explore/sydney.jpg") no-repeat;
+}
+/*内容区域 热点地图 图片晃动 End*/
+/*内容区域 热点地图 End*/

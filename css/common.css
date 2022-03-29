@@ -1,0 +1,299 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/*字体图标声明 Start*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4zkjdj');
+    src:  url('../fonts/icomoon.eot?4zkjdj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?4zkjdj') format('truetype'),
+    url('../fonts/icomoon.woff?4zkjdj') format('woff'),
+    url('../fonts/icomoon.svg?4zkjdj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+/*字体图标声明 End*/
+/*头部导航区域 Start*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 999;
+}
+header .main {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    width: 1050px;
+    height: 60px;
+    background-color: rgba(255,255,255,.6);
+    box-shadow: 0 2px rgba(0,0,0,.1);
+    border-radius: 0 0 20px 20px;
+}
+header .left {
+    position: absolute;
+    top: 0;
+    left: 61px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: transparent rgba(255,255,255,.6) transparent transparent;
+    border-style: solid;
+    border-width: 0 14px 42px 0 ;
+}
+header .right {
+    position: absolute;
+    top: 0;
+    right: 61px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-color: rgba(255,255,255,.6) transparent transparent transparent ;
+    border-style: solid;
+    border-width: 42px 14px 0 0;
+}
+header .main img {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    height: 50px;
+}
+header .main .nav {
+    position: absolute;
+    right: 200px;
+}
+.main .nav>li {
+    float: left;
+}
+.main .nav>li:hover {
+    border-bottom: 2px solid #293748;
+}
+.main .nav>li a {
+    display: block;
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 60px;
+    color: #293748;
+}
+.main .nav>li a:hover {
+    font-weight: 600;
+}
+/*"探索世界"二级菜单 Start*/
+.main .nav>li:nth-child(2) {
+    height: 60px;
+    width: 102px;
+}
+.main .nav>li:nth-child(2)>a::after {
+    float: right;
+    display: block;
+    content: '\ea43';
+    font-family: 'icomoon', serif;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+    transform: rotate(0deg);
+    transition: transform .6s ease-in-out;
+}
+/*鼠标经过li时 a::after字体图标旋转*/
+.main .nav>li:nth-child(2):hover a::after {
+    transform: rotate(180deg);
+}
+.main .nav li>ol li {
+    height: 0;
+    width: 102px;
+    overflow: hidden;
+    transition: height .6s ease-in-out;
+    background-color: rgba(255,255,255,.5);
+}
+.main .nav li>ol li:last-child {
+    border-radius: 0 0 12px 12px;
+}
+.main .nav li>ol li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+}
+.main .nav li>ol li a:hover {
+    background-color: rgba(0,0,0,.15);
+}
+.main .nav li:hover ol>li {
+    height: 40px;
+}
+/*"探索世界"二级菜单 End*/
+header .main .login {
+    position: absolute;
+    right: 35px;
+}
+.main .login li a {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 60px;
+    color: #293748;
+}
+.main .login li a:hover {
+    font-weight: 600;
+}
+/*头部导航区域 End*/
+
+/*底部footer区域  Start*/
+body footer {
+    height: 450px;
+    background-color: #3c3c3c;
+    opacity: 1;
+    z-index: 9999;
+}
+footer .w,
+footer .w a {
+    position: relative;
+    font-size: 13px;
+    color: #c2c2c2;
+}
+footer .w strong {
+    font-weight: 400;
+    color: #f39d00;
+}
+footer .w a>strong:hover {
+    color: #fff;
+}
+footer .w a:hover {
+    color: #fff;
+}
+footer .w .introduction,
+footer .w .about,
+footer .w .service {
+    float: left;
+    width: 260px;
+    height: 200px;
+    margin-top: 30px;
+}
+footer .w dt {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 45px;
+}
+footer .w dd,
+footer .w dd a {
+    line-height: 25px;
+}
+/*底部footer区域 联系我们&保险图片 Start*/
+footer .w .con_ins {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 420px;
+    height: 200px;
+    margin: 30px 0 0 0;
+}
+footer .w .con_ins>div {
+    width: 420px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+}
+footer .w .con_ins a{
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+footer .w .con_ins .contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .w .con_ins ul {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -115px;
+    display: block;
+}
+footer .w .con_ins ul li {
+    float: left;
+    display: block;
+    margin-right: 20px;
+}
+footer .w .con_ins ul li:last-child {
+    float: left;
+    display: block;
+}
+footer .w .con_ins ul li a {
+    font-family: 'icomoon', serif;
+    font-size: 24px;
+}
+footer .w .con_ins ul li:nth-child(1) a::after {
+    content: '\e90d';
+}
+footer .w .con_ins ul li:nth-child(2) a::after {
+    content: '\e90c';
+}
+footer .w .con_ins ul li:nth-child(3) a::after {
+    content: '\e914';
+}
+footer .w .con_ins ul li:nth-child(4) a::after {
+    content: '\e911';
+}
+footer .w .con_ins ul li:nth-child(5) a::after {
+    content: '\e915';
+}
+footer .w .con_ins .insurance {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    width: 420px;
+    height: 86px;
+    background: url("../images/insurance.png");
+}
+/*底部footer区域 联系我们&保险图片 End*/
+/*底部footer区域 友情链接 Start*/
+footer .w .links {
+    position: absolute;
+    top: 280px;
+    height: 60px;
+    border-top: 2px solid #575a5b;
+    border-bottom: 2px solid #575a5b;
+}
+footer .w .links a {
+    line-height: 56px;
+}
+/*底部footer区域 友情链接 End*/
+/*底部footer区域 认证图片 Start*/
+footer .w .certification {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    width: 310px;
+    height: 30px;
+    margin-left: -155px;
+}
+footer .w .certification span {
+    float: left;
+    display: block;
+    width: 90px;
+    height: 30px;
+}
+footer .w .certification span:nth-child(1) {
+    background: url("../images/certification.png") no-repeat 0 0;
+    margin-right: 20px;
+}
+footer .w .certification span:nth-child(2) {
+    background: url("../images/certification.png") no-repeat 0 -32px;
+    margin-right: 20px;
+}
+footer .w .certification span:nth-child(3) {
+    background: url("../images/certification.png") no-repeat 0 -66px;
+}
+/*底部footer区域 认证图片 End*/
+/*底部footer区域 End*/

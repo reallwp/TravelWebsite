@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+em, i {
+    font-style: normal
+}
+li {
+    list-style: none
+}
+img {
+    /*照顾低版本浏览器，如果图片外包含链接会有边框的问题*/
+    border: 0;
+    /*解决图片底侧的空白缝隙问题*/
+    vertical-align: middle
+}
+button {
+    /*鼠标经过按钮变成小手*/
+    cursor: pointer
+}
+a {
+    text-decoration: none
+}
+body {
+    /*抗文字锯齿,使文字显示更加清晰*/
+    -webkit-font-smoothing: antialiased;
+    /*页面背景是白色*/
+    background-color: #f7f7f7;
+}
+.hide,
+.none {
+    display: none
+}
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.clearfix {
+    *zoom: 1
+}
